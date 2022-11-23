@@ -1,0 +1,102 @@
+.carousel-inner {
+    height: 85vh;
+}
+
+.carousel-item{
+    background-size: cover;
+}
+
+.carousel-item:after{
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(44,53,49,0.85);
+}
+
+.carousel-item .title-text{
+    font-size: 1.1rem;
+}
+
+.carousel-item .caption-text{
+    font-size: 0.8rem;
+}
+
+.carousel-caption{ 
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.carousel-caption h1{ 
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.carousel-caption p{ 
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.page-main-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.page-main-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.page-section {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 2.2rem;
+    color:#1F2833;
+}
+
+.section-title-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #116466;
+}
+
+.section-text.title{
+    font-size: 1.5rem;
+    color:#1F2833;
+    font-weight: 500;
+}
+
+.section-text.paragraph{
+    font-size: 1.2rem;
+    color:#1F2833;
+    font-weight: 300;
+}
+
+.section-icon-feature {
+    font-size: 5rem;
+    color: #D9B08C;
+}
+
+.section-icon-use {
+    font-size: 5rem;
+    color: #FFCB9A;
+}
+
+hr.divider {
+    max-width: 3.5rem;
+    border-width: 0.2rem;
+    border-color: #D9B08C;
+}

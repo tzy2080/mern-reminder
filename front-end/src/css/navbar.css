@@ -1,0 +1,46 @@
+.navbar {
+    background: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar.active {
+    background: rgba(37, 37, 37, 0.9);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar.mobile {
+    background: rgba(37, 37, 37, 0.9) !important;
+}
+
+.nav-link {
+    font-size:1.1rem;
+    color:white;
+    font-weight: lighter;
+}
+
+.nav-link:hover {
+    color: #7D7D7D;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    color: white;
+    transition: 0.3s ease-in-out;
+    font-weight: 400;
+}
+
+.navbar-brand.active {
+    font-size: 1.3rem;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #7D7D7D;
+}
+
+.navbar-toggler-icon {
+    color:#fff;
+}

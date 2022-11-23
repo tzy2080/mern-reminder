@@ -1,0 +1,50 @@
+.wrapper {
+    background: linear-gradient(45deg, rgba(4, 104, 117, 0.9) 0%, rgba(69, 186, 199, 0.5) 81%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 7rem;
+}
+
+.list-card {
+    width: 78rem;
+}
+
+.list-card-heading {
+    font-weight: 300;
+    font-size: 2.2rem;
+    color: #1F2833;
+}
+
+hr.divider {
+    max-width: 3.5rem;
+    border-width: 0.2rem;
+    border-color: #D9B08C;
+}
+
+.table-heading {
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+}
+
+.table-item {
+    color: #909e9e;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.table-header {
+    background-color: rgb(20, 149, 255);
+}
+
+.table-outline {
+    border-radius: 14px;
+    border-style: solid;
+    border-color: transparent;
+    border-width : 0px;
+}
+
+.btn.size {
+    width: 5rem;
+}

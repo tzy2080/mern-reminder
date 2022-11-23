@@ -1,0 +1,42 @@
+.page-not-found-body {
+    background: rgba(44,53,49,0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 7rem;
+}
+
+
+.page-not-found-message h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #1F2833;
+}
+
+.page-not-found-message h2 {
+    color: #6d7879;
+    font-weight: 400;
+}
+
+.page-not-found-message h5 {
+    color: #383e3f;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.page-not-found-message .icon {
+    font-size: 7rem;
+    font-weight: 400;
+}
+
+.home-btn {
+    background-color: #879697;
+    border-color: #879697;
+    color: white;
+}
+
+.home-btn:hover {
+    background-color: #687475;
+    border-color: #687475;
+    color: white;
+}
