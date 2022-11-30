@@ -4,7 +4,8 @@ require("dotenv").config();
 // For sending simple email
 const sendEmail = (options) => {
     const transporter = nodemailer.createTransport({
-        service: process.env.EMAIL_SERVICE,
+        host: process.env.HOST,
+        port: 587,
         auth: {
             user: process.env.EMAIL_USERNAME,
             pass: process.env.EMAIL_PASSWORD
