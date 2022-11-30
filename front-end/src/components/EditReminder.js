@@ -50,7 +50,7 @@ const EditReminder = () => {
                 setRetrieveFailure(true);
                 console.log(error);
             })
-    }, [])
+    }, [id])
     
     // Handles submit button behavior
     const onSubmit = (e) => {

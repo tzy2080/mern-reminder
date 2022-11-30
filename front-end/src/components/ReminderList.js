@@ -74,7 +74,7 @@ const ReminderList = () => {
                     <div className="row mx-0">
                         <div className="col-12 px-1 px-md-3">
                             {/* If there is no reminder display this following block */}
-                            { reminders.length == 0 && 
+                            { reminders.length === 0 && 
                                 <div className='row mt-4 justify-content-center'>
                                     <div className='col-8 text-center'>
                                         <p className='text'>No reminders. Click the <strong>Create reminder </strong>link in the navigation bar to create a reminder.</p>
@@ -82,7 +82,7 @@ const ReminderList = () => {
                                 </div>
                             }
                             {/* If there is reminder display the reminders in a table */}
-                            {   reminders.length != 0 &&
+                            {   reminders.length !== 0 &&
                                 <div className="table-responsive shadow table-outline">
                                     <table className="table">
                                         <thead className="table-header">
