@@ -22,7 +22,6 @@ const CreateReminder = () => {
         const currentDate = new Date();
         currentDate.setTime(date.getTime() + (1000 * 60)*1);
         const selectedDate = new Date(time);
-    
         return currentDate.getTime() < selectedDate.getTime();
     }
 
@@ -68,7 +67,7 @@ const CreateReminder = () => {
                                     <label>Task name: </label>
                                     <input type='text'
                                         required
-                                        className="form-control"
+                                        className="form-control input-field"
                                         value={ taskName }
                                         onChange={ (e) => setTaskName(e.target.value) }
                                     />
@@ -98,10 +97,11 @@ const CreateReminder = () => {
                                             dateFormat="MMMM d, yyyy h:mm aa"
                                             minDate={ dateNow }
                                             filterTime={filterPassedTime}
+                                            className="date-input"
                                         />
                                     </div>
                                 </div>
-                                <div className="form-group pt-3">
+                                <div className="form-group pt-3 text-center">
                                     <input type="submit" value="Create reminder" className="btn btn-primary rounded-pill submit-btn" />
                                 </div>
                             </form>

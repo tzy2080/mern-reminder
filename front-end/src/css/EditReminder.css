@@ -8,6 +8,7 @@
 
 .edit-card {
     width: 40rem;
+    border-radius: 15px;
 }
 
 .edit-card-heading {
@@ -19,6 +20,10 @@
 .form-group.label {
     font-weight: 500;
     color: #1F2833;
+}
+
+.input-field {
+    width: 25rem;
 }
 
 .submit-btn {
@@ -40,4 +45,12 @@ hr.divider {
     max-width: 3.5rem;
     border-width: 0.2rem;
     border-color: #D9B08C;
+}
+
+.date-input {
+    min-width: 25rem;
+    height: 2.4rem;
+    padding-left: 10px;
+    border-radius: 0.25rem;
+    border: 1px solid #cdd4da;
 }

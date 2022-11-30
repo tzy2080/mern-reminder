@@ -35,7 +35,6 @@ const Register = () => {
             history.push('/');
         } catch(error) {
             setErrors(error.response.data.errors);
-            console.error(error);
         }
     };
 
@@ -64,7 +63,7 @@ const Register = () => {
                     <br/>
                     <div className="row">
                         <div className="col text-center">
-                            <h1 className="login-card-heading">Register a new account</h1>
+                            <h1 className="register-card-heading">Register a new account</h1>
                             <hr className="divider mt-3 mb-5"></hr>
                         </div>
                     </div>

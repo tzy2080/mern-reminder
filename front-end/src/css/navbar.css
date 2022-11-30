@@ -16,9 +16,9 @@
 }
 
 .nav-link {
-    font-size:1.1rem;
+    font-size:1.05rem;
     color:white;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 .nav-link:hover {
@@ -26,10 +26,10 @@
 }
 
 .navbar-brand {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: white;
     transition: 0.3s ease-in-out;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .navbar-brand.active {

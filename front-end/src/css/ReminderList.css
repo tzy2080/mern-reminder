@@ -1,5 +1,5 @@
 .wrapper {
-    background: linear-gradient(45deg, rgba(4, 104, 117, 0.9) 0%, rgba(69, 186, 199, 0.5) 81%);
+    background-color:  rgba(4, 104, 117, 0.7);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -8,6 +8,8 @@
 
 .list-card {
     width: 78rem;
+    min-height: 80vh;
+    border-radius: 15px;
 }
 
 .list-card-heading {
@@ -29,9 +31,13 @@ hr.divider {
 }
 
 .table-item {
-    color: #909e9e;
+    color: #1F2833;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.description-col {
+    min-width: 30rem;
 }
 
 .table-header {
@@ -39,7 +45,7 @@ hr.divider {
 }
 
 .table-outline {
-    border-radius: 14px;
+    box-shadow: none !important;
     border-style: solid;
     border-color: transparent;
     border-width : 0px;
@@ -47,4 +53,9 @@ hr.divider {
 
 .btn.size {
     width: 5rem;
+}
+
+.text {
+    font-size: 1.05rem;
+    font-weight: 400;
 }

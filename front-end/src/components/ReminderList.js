@@ -26,7 +26,7 @@ const ReminderList = () => {
     // Custom tag
     const Reminder = props => (
         <tr>
-            <td className="table-item align-middle py-1 pl-md-4"><p>{props.reminder.taskName}</p></td>
+            <td className="table-item align-middle py-4 pl-md-4"><p>{props.reminder.taskName}</p></td>
             <td className="table-item align-middle py-1"><div dangerouslySetInnerHTML={{__html: draftToHtml(JSON.parse(props.reminder.taskDescription))}}></div></td>
             <td className="table-item align-middle py-1">{new Date(props.reminder.taskCreateDate).toString()}</td>
             <td className="table-item align-middle py-1">{new Date(props.reminder.taskExpireDate).toString()}</td>
@@ -73,22 +73,34 @@ const ReminderList = () => {
                     </div>
                     <div className="row mx-0">
                         <div className="col-12 px-1 px-md-3">
-                            <div className="table-responsive shadow table-outline">
-                                <table className="table table-hover">
-                                    <thead className="table-header">
-                                        <tr>
-                                            <th className="table-heading align-middle pl-md-4">Name</th>
-                                            <th className="table-heading align-middle">Description</th>
-                                            <th className="table-heading align-middle">Create Date</th>
-                                            <th className="table-heading align-middle">Remind Date</th>
-                                            <th className="table-heading text-center align-middle">Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        { !loading && reminderList() }
-                                    </tbody>
-                                </table>
-                            </div>
+                            {/* If there is no reminder display this following block */}
+                            { reminders.length == 0 && 
+                                <div className='row mt-4 justify-content-center'>
+                                    <div className='col-8 text-center'>
+                                        <p className='text'>No reminders. Click the <strong>Create reminder </strong>link in the navigation bar to create a reminder.</p>
+                                    </div>
+                                </div>
+                            }
+                            {/* If there is reminder display the reminders in a table */}
+                            {   reminders.length != 0 &&
+                                <div className="table-responsive shadow table-outline">
+                                    <table className="table">
+                                        <thead className="table-header">
+                                            <tr>
+                                                <th className="table-heading align-middle pl-md-4">Name</th>
+                                                <th className="table-heading align-middle description-col">Description</th>
+                                                <th className="table-heading align-middle">Create Date</th>
+                                                <th className="table-heading align-middle">Remind Date</th>
+                                                <th className="table-heading text-center align-middle">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            { !loading && reminderList() }
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            }
                             { loading && loadingSpinner() }
                         </div>
                     </div>

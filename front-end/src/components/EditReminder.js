@@ -91,7 +91,7 @@ const EditReminder = () => {
                                         <label>Task name: </label>
                                         <input type='text'
                                             required
-                                            className="form-control"
+                                            className="form-control input-field"
                                             value={ taskName }
                                             onChange={ (e) => setTaskName(e.target.value) }
                                         />
@@ -121,10 +121,11 @@ const EditReminder = () => {
                                                 dateFormat="MMMM d, yyyy h:mm aa"
                                                 minDate={ dateNow }
                                                 filterTime={filterPassedTime}
+                                                className="date-input"
                                             />
                                         </div>
                                     </div>
-                                    <div className="form-group pt-3">
+                                    <div className="form-group pt-3 text-center">
                                         <input type="submit" value="Edit reminder" className="btn btn-primary rounded-pill submit-btn" />
                                     </div>
                                 </form>
