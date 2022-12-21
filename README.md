@@ -1,7 +1,7 @@
-## Purpose
+## Functionality
 A website that allows users to create reminders and receive them through email.
 ## Tech stack 
-This website is created using MERN stack
+MongoDB, Express, React, Node.js
 ## Webpage
 ### Homepage
 ![image](https://user-images.githubusercontent.com/118338730/204814752-cb6a2cc4-7c47-49aa-be83-3decc5b8189f.png)
